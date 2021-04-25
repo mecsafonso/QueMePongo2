@@ -1,6 +1,6 @@
 package domain.prendas;
 
-public enum Material {
+public enum Material implements Atributo {
   TELA,
   GABARDINA,
   NYLON,

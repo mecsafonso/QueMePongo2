@@ -2,24 +2,52 @@
 'https://plantuml.com/class-diagram
 
 class Prenda{
-java.awt.Color colorPrimario
-java.awt.Color colorSecundario
+List<Atributo> atributos
 categoria() : Categoria
+agregarAtributo(Atributo atributo)
 }
 class Tipo{
 getCategoria()
 }
+class Color{
+int red
+int green
+int blue
+}
+
 enum Material{
 GABARDINA, NYLON, ALGODON, ...
 }
 enum Categoria{
-SUPERIOR, CALZADO, INFERIOR, ACCESORIO
+SUPERIOR, CALZADO, INFERIOR, ACCESORIO, ...
+}
+enum Trama{
+LISA,RAYADA,CON_LUNARES,A_CUADROS,ESTAMPADO,...
 }
 
-Tipo --> "1" Categoria
-Prenda --> "1" Material
-Prenda --> "1" Tipo
-Prenda ..> Categoria
+interface Atributo{
+}
 
+Prenda --right> "1" Tipo
+Prenda --> "*" Atributo
+
+Material ..up|> Atributo
+Categoria ..up|> Atributo
+Trama ..up|> Atributo
+Color ..up|> Atributo
+
+class Atuendo{
+List<Prenda> prendas
+ agregarPrenda(Prenda prenda)
+}
+
+Atuendo --> "*" Prenda
+
+class Uniforme{
+String nombreInstitucion
+
+}
+
+Uniforme --left|> Atuendo
 
 @enduml

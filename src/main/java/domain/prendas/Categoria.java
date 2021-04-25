@@ -1,6 +1,6 @@
 package domain.prendas;
 
-public enum Categoria {
+public enum Categoria implements Atributo {
   CALZADO,
   SUPERIOR,
   INFERIOR,
