@@ -2,7 +2,7 @@
 'https://plantuml.com/class-diagram
 
 class Prenda{
-List<Atributo> atributos
+Map<String,Atributo> atributos
 categoria() : Categoria
 agregarAtributo(Atributo atributo)
 }
@@ -16,13 +16,13 @@ int blue
 }
 
 enum Material{
-GABARDINA, NYLON, ALGODON, ...
+GABARDINA, NYLON, ALGODON
 }
 enum Categoria{
-SUPERIOR, CALZADO, INFERIOR, ACCESORIO, ...
+SUPERIOR, CALZADO, INFERIOR, ACCESORIO
 }
 enum Trama{
-LISA,RAYADA,CON_LUNARES,A_CUADROS,ESTAMPADO,...
+LISA,RAYADA,CON_LUNARES,A_CUADROS,ESTAMPADO
 }
 
 interface Atributo{

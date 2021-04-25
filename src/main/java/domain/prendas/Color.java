@@ -1,6 +1,6 @@
 package domain.prendas;
 
-class Color implements Atributo{
+public class Color implements Atributo{
   int red;
   int green;
   int blue;

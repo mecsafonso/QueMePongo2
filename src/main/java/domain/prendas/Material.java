@@ -4,5 +4,6 @@ public enum Material implements Atributo {
   TELA,
   GABARDINA,
   NYLON,
-  ALGODON
+  ALGODON,
+  CUERO
 }
