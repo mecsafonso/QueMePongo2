@@ -29,7 +29,7 @@ public class Prenda {
     } // No quiero que la List se llene de nulls
   }
 
-  Categoria getCategoria() {
+  public Categoria getCategoria() {
     return this.tipo.getCategoria();
   }
 

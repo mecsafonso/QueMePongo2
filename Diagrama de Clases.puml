@@ -1,4 +1,8 @@
 @startuml
+left to right direction
+skinparam backgroundColor transparent
+skinparam arrowFontColor royalblue
+skinparam arrowColor royalblue
 'https://plantuml.com/class-diagram
 
 class Prenda{
