@@ -2,7 +2,7 @@ package domain.prendas;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//WIP
 public class Borrador {
   private final Tipo tipo;
   // private List<Atributo> atributos;
