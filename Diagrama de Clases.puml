@@ -9,6 +9,7 @@ class Prenda{
 Map<String,Atributo> atributos
 categoria() : Categoria
 agregarAtributo(Atributo atributo)
+crearBorrador() : Borrador
 }
 class Tipo{
 getCategoria()

@@ -39,5 +39,9 @@ public class Prenda {
         atributos.containsKey(Clave.COLORPRIMARIO) && atributos.containsKey(Clave.MATERIAL) && this.getCategoria() != null;
   }
 
+  private Borrador crearBorrador(Tipo tipo,Map<Clave,Atributo> atributos){
+    return new Borrador(tipo,atributos);
+  }
+
 }
 
